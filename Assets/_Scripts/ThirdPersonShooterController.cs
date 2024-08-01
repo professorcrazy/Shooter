@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using StarterAssets;
-using System.Runtime.InteropServices;
-using Unity.VisualScripting;
+using UnityEngine.Animations.Rigging;
+using System.Linq;
 
 public class ThirdPersonShooterController : MonoBehaviour
 {
+    [SerializeField] private Rig aimRig;
     [SerializeField] private CinemachineVirtualCamera aimVirtualCamera;
     [SerializeField] private float normalSelsitivity = 1.0f;
     [SerializeField] private float aimSensitivty = 0.5f;
@@ -18,6 +19,10 @@ public class ThirdPersonShooterController : MonoBehaviour
     private StarterAssetsInputs starterAssetsInputs;
     private ThirdPersonController thirdPersonController;
     private Animator anim;
+
+    [SerializeField] private ParticleSystem particleShotEffect;
+    [SerializeField] private Light muzzleFlashLight;
+    [SerializeField] private AudioSource shotSound;
 
     Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
 
@@ -49,17 +54,21 @@ public class ThirdPersonShooterController : MonoBehaviour
             mouseWorldPos = hit.point;
         }
         if (starterAssetsInputs.aim) {
-            anim.SetLayerWeight(1, Mathf.Lerp(anim.GetLayerWeight(1), 1f, Time.deltaTime*10f));
+            //            anim.SetLayerWeight(1, Mathf.Lerp(anim.GetLayerWeight(1), 1f, Time.deltaTime*10f));
+            aimRig.weight = 1f;
+            anim.SetBool("Aiming", true);
             aimVirtualCamera.gameObject.SetActive(true);
             thirdPersonController.SetSensitivity(aimSensitivty);
             thirdPersonController.SetRotateOnMove(false);
             Vector3 worldAimTarget = mouseWorldPos;
             worldAimTarget.y = transform.position.y;
-            Vector3 aimDirection = (worldAimTarget-transform.position).normalized;
+            Vector3 aimDirection = (worldAimTarget - transform.position).normalized;
             transform.forward = Vector3.Lerp(transform.forward, aimDirection, Time.deltaTime * 20f);
         }
         else {
-            anim.SetLayerWeight(1, Mathf.Lerp(anim.GetLayerWeight(1), 0f, Time.deltaTime * 10f));
+            //            anim.SetLayerWeight(1, Mathf.Lerp(anim.GetLayerWeight(1), 0f, Time.deltaTime * 10f));
+            aimRig.weight = 0f;
+            anim.SetBool("Aiming", false);
             aimVirtualCamera.gameObject.SetActive(false);
             thirdPersonController.SetSensitivity(normalSelsitivity);
             thirdPersonController.SetRotateOnMove(true);
@@ -70,8 +79,16 @@ public class ThirdPersonShooterController : MonoBehaviour
             canShoot = false;
             lastShot = Time.time;
             Vector3 aimDir = (mouseWorldPos - bulletSpawnPos.position).normalized;
-            Instantiate(bulletPrefab, bulletSpawnPos.position, Quaternion.LookRotation(aimDir,Vector3.up));
+            Instantiate(bulletPrefab, bulletSpawnPos.position, Quaternion.LookRotation(aimDir, Vector3.up));
+            StartCoroutine("ShootingEffects", 0.25f);
             //starterAssetsInputs.shoot = false;
         }
+    }
+    public IEnumerator ShootingEffects(float delay) {
+        particleShotEffect.Play();
+        shotSound.Play();
+        muzzleFlashLight.enabled = true;
+        yield return new WaitForSeconds(delay);
+        muzzleFlashLight.enabled = false;
     }
 }

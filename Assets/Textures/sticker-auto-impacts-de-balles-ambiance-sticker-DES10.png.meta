@@ -1,0 +1,466 @@
+fileFormatVersion: 2
+guid: 9ba9bcd64318a074aa8ddef45bef3b62
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 241
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b525f251d6d36f849ace7d6794cd149b
+      internalID: 1887077326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 241
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c971e76cd9df7624fba31a4c6f5fd37a
+      internalID: 678773356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 240
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ebc4c1d6b5d21488eb58f99e88c08a
+      internalID: 1494359555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_3
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 241
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f6ec3b07da9b7408fae9a476128d41
+      internalID: 944495620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 161
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3794b07ee3a2de14b8415380a942784e
+      internalID: -1270480804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 161
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1245c61138e0b4ca5be57436e9fcdb
+      internalID: 419321837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 161
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e803e6c52010286478cc5db4774c6b49
+      internalID: 1775395632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_7
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 161
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9087480bf9ab1e04a9587ae359d49816
+      internalID: 1116194573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 81
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e968828e4a9fd3348a8bb8fb9a776b66
+      internalID: 1963115715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_9
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 81
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0a2c197d92f3245bdddcfd3f82a39b
+      internalID: 1689046927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_10
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 80
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbdd89337046504bbc5f9f1f258e92e
+      internalID: 574834388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_11
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 81
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543eb0fce5970824582a28ff2e03eaf6
+      internalID: -502170820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3540f291ff5540c449135dca5ebe6c00
+      internalID: 738627049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_13
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf9a181c8940e14fa7d5e0c33fab23d
+      internalID: -381918053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_14
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2df0f39b8654d742b0579fff9f560ef
+      internalID: 832754532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sticker-auto-impacts-de-balles-ambiance-sticker-DES10_15
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 1
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8da22c355df0a44c92f2e98be7c870d
+      internalID: 1017538043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: cb540b40473fa4c4eabec08957033665
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_0: 1887077326
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_1: 678773356
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_10: 574834388
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_11: -502170820
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_12: 738627049
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_13: -381918053
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_14: 832754532
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_15: 1017538043
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_2: 1494359555
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_3: 944495620
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_4: -1270480804
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_5: 419321837
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_6: 1775395632
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_7: 1116194573
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_8: 1963115715
+      sticker-auto-impacts-de-balles-ambiance-sticker-DES10_9: 1689046927
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

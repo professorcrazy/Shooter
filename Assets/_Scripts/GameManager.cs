@@ -15,10 +15,7 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
-    public void SpawnPlayerCamSetup() {
-        int randomIndex = Random.Range(0, spawnPoints.Length);
-        GameObject player = Instantiate(playerPrefab, spawnPoints[randomIndex].position, spawnPoints[randomIndex].rotation);
-        aimVC.Follow = player.transform;
-        virtualCamera.Follow = player.transform;
+    public Transform GetRandomSpawnPoint() {
+        return spawnPoints[Random.Range(0, spawnPoints.Length)];
     }
 }

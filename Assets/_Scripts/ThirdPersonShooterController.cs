@@ -5,9 +5,13 @@ using Cinemachine;
 using StarterAssets;
 using UnityEngine.Animations.Rigging;
 using System.Linq;
+using Unity.VisualScripting;
 
-public class ThirdPersonShooterController : MonoBehaviour
+public class ThirdPersonShooterController : MonoBehaviour, IHealth
 {
+    [SerializeField] int maxHP = 100;
+    int currentHP;
+
     [SerializeField] private Rig aimRig;
     [SerializeField] private CinemachineVirtualCamera aimVirtualCamera;
     [SerializeField] private float normalSelsitivity = 1.0f;
@@ -37,6 +41,7 @@ public class ThirdPersonShooterController : MonoBehaviour
         thirdPersonController = GetComponent<ThirdPersonController>();
         anim = GetComponent<Animator>();
         updateShotDelay(rps);
+        currentHP = maxHP;
     }
 
     public void updateShotDelay(float newRPS) {
@@ -90,5 +95,14 @@ public class ThirdPersonShooterController : MonoBehaviour
         muzzleFlashLight.enabled = true;
         yield return new WaitForSeconds(delay);
         muzzleFlashLight.enabled = false;
+    }
+    public void TakeDamage(int damage) {
+        currentHP -= damage;
+        if (currentHP <= 0) {
+            Transform t = GameManager.Instance.GetRandomSpawnPoint();
+            currentHP = maxHP;
+            transform.position = t.position;
+            transform.rotation = t.rotation;
+        }
     }
 }
